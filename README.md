@@ -1,28 +1,32 @@
-<h1><center>mpv-mpris2-bin</center></h1>
+<div align="center">
 
-AUR repository for [mpv-mpris2-bin](https://aur.archlinux.org/packages/mpv-mpris2-bin/), a binary package of [mpv-mpris2](https://github.com/eNV25/mpv-mpris2)
+# mpv-mpris2-bin
 
+AUR package for [mpv-mpris2](https://github.com/eNV25/mpv-mpris2)
+
+</div>
 
 ## Installation
 
-To install `mpv-mpris2-bin`, you can use an AUR helper like `yay` or `paru`. Here are the commands for both:
-
-- Using `yay`:
+### From [`my-repo`](https://github.com/soymadip/my-repo) Repo
 
 ```bash
-yay -S mpv-mpris2-bin
+  curl -sL https://mydehq.github.io/my-repo/install | bash
+  sudo pacman -S mpv-mpris2-bin
 ```
 
-- Using `paru`:
+### From AUR
 
 ```bash
 paru -S mpv-mpris2-bin
+# or
+yay -S mpv-mpris2-bin
 ```
 
-# Update Instructions
-
-Every time package is updated, run:
+### Manually
 
 ```bash
-./release.sh
+git clone https://aur.archlinux.org/mpv-mpris2-bin.git
+cd mpv-mpris2-bin
+makepkg -si
 ```
